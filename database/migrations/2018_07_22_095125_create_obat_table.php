@@ -19,6 +19,7 @@ class CreateObatTable extends Migration
             $table->unsignedInteger('satuan_id');
             $table->unsignedInteger('jenis_id');
             $table->timestamps();
+            $table->softDeletes();
 
 
             $table->foreign('satuan_id')->references('id')->on('satuans');

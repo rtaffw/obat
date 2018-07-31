@@ -11,18 +11,24 @@
 |
 */
 
+// Route::get('/coba','TestingController@index');
+
 Route::get('/', function () {
-    return view('testing.index');
+    return redirect(route('data_obat.index'));
 });
 //
-// Route::post('/testing', function () {
-//     return "berhasil";
-// });
-//
-// Route::get('/berhasil', function () {
-//     return "1";
-// });
-//
+// Route::get('/data_obat', function () {
+//     return view('template.data_obat');
+// })->name('apotek_data_obat');
+
+Route::resource('/data_obat', 'ObatController');
+Route::resource('/data_stok', 'StokObatController');
+Route::get('logout','Auth\LoginController@logout');
+
+
+
+
+
 Auth::routes();
 //
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
