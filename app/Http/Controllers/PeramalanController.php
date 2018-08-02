@@ -41,18 +41,18 @@ class PeramalanController extends Controller
                                       'id'          => $v->id,
                                       'obat_id'     => $v->obat->id,
                                       'nama'        => $v->obat->name,
-                                      'bulan'       => "tes",//explode("-" , $v->bulan)[1],
+                                      'bulan'       => explode("-" , $v->bulan)[1],
                                       'bulan_huruf' => $this->Bulan_indo(explode("-" , $v->bulan)[1]),
-                                      'tahun'       => 2012,//explode("-" , $v->bulan)[0],
+                                      'tahun'       => explode("-" , $v->bulan)[0],
                                       'jumlah'      => $v->c,
                                     ];
                               }
 
-
-          return view('template.data_peramalan',[
-                                            'data_obat' => $data_obat,
-                                            'data_hasil' => $data_hasil,
-                                                                      ]);
+return $data_hasil;
+          // return view('template.data_peramalan',[
+          //                                   'data_obat' => $data_obat,
+          //                                   'data_hasil' => $data_hasil,
+          //                                                             ]);
 
 
     }
