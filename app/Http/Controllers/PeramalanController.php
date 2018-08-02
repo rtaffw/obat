@@ -32,7 +32,7 @@ class PeramalanController extends Controller
               Hasil::insert(['obat_id'=>$v->id,'c'=>0]);
           }
         }
-return "sampai sini";
+return Hasil::all();
           foreach(Hasil::all() as $key => $v)
           {
                 $data_hasil[$key] = [
