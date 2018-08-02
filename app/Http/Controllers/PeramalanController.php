@@ -25,6 +25,7 @@ class PeramalanController extends Controller
     public function index()
     {
         $data_obat = Obat::all();
+        Hasil::all()->delete();
 
         foreach ($data_obat as $key => $v) {
           // echo Hasil::where(['obat_id'=>$v->id])->count();
@@ -40,7 +41,7 @@ class PeramalanController extends Controller
                 $data_hasil[$key] = [
                                       'id'          => $v->id,
                                       'obat_id'     => $v->obat_id,
-                                      // 'nama'        => $v->obat->name,
+                                      'nama'        => $v->obat->name,
                                       'nama'        => "ERROR",
                                       'bulan'       => explode("-" , $v->bulan)[1],
                                       'bulan_huruf' => $this->Bulan_indo(explode("-" , $v->bulan)[1]),
