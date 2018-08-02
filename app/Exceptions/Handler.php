@@ -51,7 +51,7 @@ class Handler extends ExceptionHandler
      {
          if($exception instanceof NotFoundHttpException)
  		{
- 		  return response()->redirect()->route('data_obat.index');
+ 		  return redirect()->route('data_obat.index');
  		}
          return parent::render($request, $exception);
      }
