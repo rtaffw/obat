@@ -33,7 +33,7 @@ class PeramalanController extends Controller
           }
         }
 
-return Hasil::all();
+// return Hasil::all();
 
           foreach(Hasil::all() as $key => $v)
           {
@@ -41,14 +41,14 @@ return Hasil::all();
                                       'id'          => $v->id,
                                       'obat_id'     => $v->obat->id,
                                       'nama'        => $v->obat->name,
-                                      'bulan'       => explode("-" , $v->bulan)[1],
+                                      // 'bulan'       => explode("-" , $v->bulan)[1],
                                       'bulan_huruf' => $this->Bulan_indo(explode("-" , $v->bulan)[1]),
-                                      'tahun'       => explode("-" , $v->bulan)[0],
+                                      // 'tahun'       => explode("-" , $v->bulan)[0],
                                       'jumlah'      => $v->c,
                                     ];
                               }
 
-// return $data_hasil;
+return $data_hasil;
           // return view('template.data_peramalan',[
           //                                   'data_obat' => $data_obat,
           //                                   'data_hasil' => $data_hasil,
