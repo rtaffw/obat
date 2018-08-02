@@ -27,13 +27,15 @@ class PeramalanController extends Controller
         $data_obat = Obat::all();
         Hasil::all()->delete();
 
-        foreach ($data_obat as $key => $v) {
+        return $data_obat;
+
+        // foreach ($data_obat as $key => $v) {
           // echo Hasil::where(['obat_id'=>$v->id])->count();
           // if(!Hasil::where(['obat_id'=>$v->id])->count()){
-          echo "|| => ".$v->id."\n";
+          // echo "|| => ".$v->id."\n";
               // Hasil::insert(['obat_id'=>$v->id,'c'=>0]);
           // }
-        }
+        // }
 // return "berhasil fin";
 // return Hasil::all();
 
