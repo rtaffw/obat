@@ -4,11 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\Obat;
 use App\Models\Jenis;
+use App\Models\Hasil;
 use App\Models\Satuan;
 use Illuminate\Http\Request;
 
 class ObatController extends Controller
 {
+  public function __construct()
+  {
+      $this->middleware('auth');
+  }
     /**
      * Display a listing of the resource.
      *

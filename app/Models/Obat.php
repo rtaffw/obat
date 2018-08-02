@@ -25,4 +25,14 @@ class Obat extends Model
     {
       return $this->hasOne('App\Models\Stok');
     }
+
+    public function Perhitungan()
+    {
+      return $this->hasOne('App\Models\Perhitungan');
+    }
+
+    public function Hasil()
+    {
+      return $this->hasOne('App\Models\HHasil');
+    }
 }

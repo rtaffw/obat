@@ -12,25 +12,28 @@
     <title>Aplikasi Peramalan Menggunakan Metode Least Square</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset('template/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="template/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="{{asset('template/vendor/metisMenu/metisMenu.min.css')}}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="template/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="{{asset('template/dist/css/sb-admin-2.css')}}" rel="stylesheet">
+
+    <!-- Chartis CSS -->
+    <link href="{{asset('template/dist/css/chartist.min.css')}}" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="template/vendor/morrisjs/morris.css" rel="stylesheet">
+    <link href="{{asset('template/vendor/morrisjs/morris.css')}}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="template/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('template/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
     <!-- DataTables CSS -->
-    <link href="template/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="{{asset('template/vendor/datatables-plugins/dataTables.bootstrap.css')}}" rel="stylesheet">
 
     <!-- DataTables Responsive CSS -->
-    <link href="template/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link href="{{asset('template/vendor/datatables-responsive/dataTables.responsive.css')}}" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -89,10 +92,13 @@
                             <a href="{{route('data_obat.index')}}" ><i class="fa fa-dashboard fa-fw"></i>Data Obat</a>
                         </li>
                         <li>
-                            <a href="{{route('data_stok.index')}}" ><i class="fa fa-dashboard fa-fw"></i>Data Stok Obat</a>
+                            <a href="{{route('data_stok.index')}}" ><i class="fa fa-edit fa-fw"></i></i>Data Stok Obat</a>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i>Logout</a>
+                            <a href="{{route('data_peramalan.index')}}" ><i class="fa fa-table fa-fw"></i>Data Peramalan</a>
+                        </li>
+                        <li>
+                            <a href="{{route('logout')}}"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
                         </li>
                     </ul>
                 </div>

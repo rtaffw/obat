@@ -14,7 +14,7 @@
 // Route::get('/coba','TestingController@index');
 
 Route::get('/', function () {
-    return redirect(route('data_obat.index'));
+    return redirect()->route('login');
 });
 //
 // Route::get('/data_obat', function () {
@@ -23,12 +23,9 @@ Route::get('/', function () {
 
 Route::resource('/data_obat', 'ObatController');
 Route::resource('/data_stok', 'StokObatController');
+Route::resource('/data_peramalan', 'PeramalanController');
+Route::resource('/data_perhitungan', 'PerhitunganController');
 Route::get('logout','Auth\LoginController@logout');
-
-
-
-
-
 Auth::routes();
 //
 // Route::get('/home', 'HomeController@index')->name('home');

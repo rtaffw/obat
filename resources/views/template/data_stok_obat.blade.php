@@ -57,9 +57,9 @@
                                 <td nowrap align="center">{{$d['bulan_huruf']}} {{$d['tahun']}}</td>
                                 <td nowrap align="right">{{$d['jumlah']}}</td>
                                 <td nowrap align="center">
-                                    <button class="btn btn-xs btn-info btn_edit" data-toggle="modal" data-target="#EditDataObatModal" data-tahun="{{$d['tahun']}}" data-id="{{$d['id']}}" data-nama="{{$d['nama']}}" data-jumlah="{{$d['jumlah']}}" data-bulan="{{$d['bulan']}}" data-bulan-huruf="{{$d['bulan_huruf']}}">Edit Obat</button>
+                                    <button class="btn btn-xs btn-info btn_edit" data-toggle="modal" data-target="#EditDataObatModal" data-tahun="{{$d['tahun']}}" data-id="{{$d['id']}}" data-nama="{{$d['nama']}}" data-jumlah="{{$d['jumlah']}}" data-bulan="{{$d['bulan']}}" data-bulan-huruf="{{$d['bulan_huruf']}}">Edit Stok</button>
 
-                                    <button class="btn btn-xs btn-danger btn_hapus" data-toggle="modal" data-target="#HapusDataObatModal" data-tahun="{{$d['tahun']}}" data-id="{{$d['id']}}"  data-nama="{{$d['nama']}}" data-jumlah="{{$d['jumlah']}}" data-bulan="{{$d['bulan']}}" data-bulan-huruf="{{$d['bulan_huruf']}}">Hapus Obat</button>
+                                    <button class="btn btn-xs btn-danger btn_hapus" data-toggle="modal" data-target="#HapusDataObatModal" data-tahun="{{$d['tahun']}}" data-id="{{$d['id']}}"  data-nama="{{$d['nama']}}" data-jumlah="{{$d['jumlah']}}" data-bulan="{{$d['bulan']}}" data-bulan-huruf="{{$d['bulan_huruf']}}">Hapus Stok</button>
                                   </td>
                             </tr>
                             @endforeach

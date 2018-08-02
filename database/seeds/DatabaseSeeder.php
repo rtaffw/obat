@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
       DB::table('users')->insert([
          'name' => 'Admin',
          'email' => 'admin@admin.com',
-         'password' => bcrypt('1a2s3d4f5'),
+         'password' => bcrypt('admin123'),
      ]);
 
      //insert satuans

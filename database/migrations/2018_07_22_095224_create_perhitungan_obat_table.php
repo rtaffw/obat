@@ -21,11 +21,7 @@ class CreatePerhitunganObatTable extends Migration
             $table->integer('y');
             $table->integer('x2');
             $table->integer('xy');
-            $table->integer('stok_asli')->default(0);
-            $table->integer('MAD');
-            $table->integer('MSE');
-            $table->integer('APE');
-            $table->integer('MAPE');
+
             $table->timestamps();
 
             $table->foreign('obat_id')->references('id')->on('obats');
