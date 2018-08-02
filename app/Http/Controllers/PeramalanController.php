@@ -108,7 +108,7 @@ class PeramalanController extends Controller
 
 
               $jumlah = stok::select('jumlah','bulan')->where('obat_id','=',$obat_id)->get();
-              return $jumlah;
+              // return $jumlah;
 
               foreach ($jumlah as $key => $v) {
                 $x[$key] = $hasil;
@@ -178,6 +178,7 @@ class PeramalanController extends Controller
               // echo "input \n";
               }
 
+              return "tes";
               unset($x);unset($x2);unset($xy);unset($y);unset($jumlah);unset($bulan);
               unset($sumx);unset($sumx2);unset($sumxy);unset($sumy);unset($sum);
 
