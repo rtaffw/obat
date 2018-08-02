@@ -1,4 +1,4 @@
-secure_@extends('template.app')
+@extends('template.app')
 
 @section('content')
     <div class="row">
