@@ -176,7 +176,7 @@ class PeramalanController extends Controller
               // }else{
                 //jika tidak maka input
                 Hasil::insert($sum);
-
+                return "mungkin dsini";
               // echo "input \n";
               // }
 
