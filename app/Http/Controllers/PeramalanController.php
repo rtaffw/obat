@@ -86,6 +86,7 @@ class PeramalanController extends Controller
     {
       $obat_id = $id;
       $data = Stok::selectRaw('count(*) as n, obat_id')->where(['obat_id'=>$obat_id])->groupBy('obat_id')->get();
+      return "sampai sini";
       Perhitungan::where(['obat_id'=>$obat_id])->delete();
 
       foreach ($data as $key => $v) {
@@ -186,7 +187,7 @@ class PeramalanController extends Controller
       if(Perhitungan::where(['obat_id'=>$obat_id])->count()==0){
         return redirect()->route('data_peramalan.index')->with('Gagal', 'Data Stok Obat Masih Kosong.');;
       }
-return "sampai sini";
+
       foreach(Perhitungan::where(['obat_id'=>$obat_id])->get() as $key => $v)
       {
             $data_perhitungan[$key] = [
