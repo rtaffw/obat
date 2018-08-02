@@ -24,33 +24,35 @@ class PeramalanController extends Controller
      }
     public function index()
     {
-        $data_obat = Obat::all();
 
-        foreach ($data_obat as $key => $v) {
-          // echo Hasil::where(['obat_id'=>$v->id])->count();
-          if(!Hasil::where(['obat_id'=>$v->id])->count()){
-              Hasil::insert(['obat_id'=>$v->id,'c'=>0]);
-          }
-        }
-
-          foreach(Hasil::all() as $key => $v)
-          {
-                $data_hasil[$key] = [
-                                      'id'          => $v->id,
-                                      'obat_id'     => $v->obat->id,
-                                      'nama'        => $v->obat->name,
-                                      'bulan'       => explode("-" , $v->bulan)[1],
-                                      'bulan_huruf' => $this->Bulan_indo(explode("-" , $v->bulan)[1]),
-                                      'tahun'       => explode("-" , $v->bulan)[0],
-                                      'jumlah'      => $v->c,
-                                    ];
-                              }
-
-
-          return view('template.data_peramalan',[
-                                            'data_obat' => $data_obat,
-                                            'data_hasil' => $data_hasil,
-                                                                      ]);
+      return "masuk";
+        // $data_obat = Obat::all();
+        //
+        // foreach ($data_obat as $key => $v) {
+        //   // echo Hasil::where(['obat_id'=>$v->id])->count();
+        //   if(!Hasil::where(['obat_id'=>$v->id])->count()){
+        //       Hasil::insert(['obat_id'=>$v->id,'c'=>0]);
+        //   }
+        // }
+        //
+        //   foreach(Hasil::all() as $key => $v)
+        //   {
+        //         $data_hasil[$key] = [
+        //                               'id'          => $v->id,
+        //                               'obat_id'     => $v->obat->id,
+        //                               'nama'        => $v->obat->name,
+        //                               'bulan'       => explode("-" , $v->bulan)[1],
+        //                               'bulan_huruf' => $this->Bulan_indo(explode("-" , $v->bulan)[1]),
+        //                               'tahun'       => explode("-" , $v->bulan)[0],
+        //                               'jumlah'      => $v->c,
+        //                             ];
+        //                       }
+        //
+        //
+        //   return view('template.data_peramalan',[
+        //                                     'data_obat' => $data_obat,
+        //                                     'data_hasil' => $data_hasil,
+        //                                                               ]);
 
 
     }
