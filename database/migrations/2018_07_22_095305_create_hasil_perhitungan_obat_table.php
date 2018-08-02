@@ -16,7 +16,7 @@ class CreateHasilPerhitunganObatTable extends Migration
         Schema::create('hasils', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('obat_id');
-            $table->date('bulan')->default('0000-01-01');
+            $table->date('bulan')->default('2000-01-01');
 
             $table->double('x', 8, 2)->nullable();
             $table->double('x2', 8, 2)->nullable();
