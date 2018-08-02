@@ -158,7 +158,7 @@ class PeramalanController extends Controller
               }else{
                 $tahun = explode("-" ,$bulan[$key])[0];
                 $bulanxx = explode("-" ,$bulan[$key])[1] + 1;
-                $bulan[$key] = $tahun."-".$bulanxx.".-01";
+                $bulan[$key] = $tahun."-".$bulanxx."-01";
               }
 
 
@@ -168,7 +168,7 @@ class PeramalanController extends Controller
               if(Hasil::where(['obat_id'=>$obat_id])->count()){
                 //jika ada maka update
                 $sum = ['bulan'=>$bulan[$key],'x' => $sumx,'x2' => $sumx2,'xy' => $sumxy,'y' => $sumy,'xt'=>$hasil,'n'=>$n,'A'=>$A,'B'=>$B,'C'=>$C];
-                // Hasil::where(['obat_id'=>$obat_id])->update($sum);
+                Hasil::where(['obat_id'=>$obat_id])->update($sum);
                 return $sum;
                 // echo "update \n";
               }else{
