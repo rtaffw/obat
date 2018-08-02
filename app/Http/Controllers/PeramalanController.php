@@ -167,8 +167,8 @@ class PeramalanController extends Controller
 
               if(Hasil::where(['obat_id'=>$obat_id])->count()){
                 //jika ada maka update
-                $sum = array('bulan'=>$bulan[$key],'x' => $sumx,'x2' => $sumx2,'xy' => $sumxy,'y' => $sumy,'xt'=>$hasil,'n'=>$n,'A'=>$A,'B'=>$B,'C'=>$C);
-                Hasil::where(['obat_id'=>$obat_id])->update($sum);
+                $sum = ['bulan'=>$bulan[$key],'x' => $sumx,'x2' => $sumx2,'xy' => $sumxy,'y' => $sumy,'xt'=>$hasil,'n'=>$n,'A'=>$A,'B'=>$B,'C'=>$C];
+                // Hasil::where(['obat_id'=>$obat_id])->update($sum);
                 return "ada";
                 // echo "update \n";
               }else{
