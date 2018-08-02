@@ -98,7 +98,7 @@
                             <a href="{{route('data_peramalan.index')}}" ><i class="fa fa-table fa-fw"></i>Data Peramalan</a>
                         </li>
                         <li>
-                            <a href="{{route('logout')}}"><span class="glyphicon glyphicon-log-out">secure_</span>Logout</a>
+                            <a href="{{route('logout')}}"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
                         </li>
                     </ul>
                 </div>
