@@ -33,6 +33,6 @@ class Obat extends Model
 
     public function Hasil()
     {
-      return $this->hasOne('App\Models\HHasil');
+      return $this->hasOne('App\Models\Hasil');
     }
 }
