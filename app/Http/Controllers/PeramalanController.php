@@ -87,7 +87,6 @@ class PeramalanController extends Controller
       $obat_id = $id;
       $data = Stok::selectRaw('count(*) as n, obat_id')->where(['obat_id'=>$obat_id])->groupBy('obat_id')->get();
       Perhitungan::where(['obat_id'=>$obat_id])->delete();
-      // return $data;
 
       foreach ($data as $key => $v) {
         $n       =  $v['n'];
@@ -108,7 +107,6 @@ class PeramalanController extends Controller
 
 
               $jumlah = stok::select('jumlah','bulan')->where('obat_id','=',$obat_id)->get();
-              // return $jumlah;
 
               foreach ($jumlah as $key => $v) {
                 $x[$key] = $hasil;
@@ -166,27 +164,23 @@ class PeramalanController extends Controller
 
 
               $sum = array('obat_id'=>$obat_id,'bulan'=>$bulan[$key],'x' => $sumx,'x2' => $sumx2,'xy' => $sumxy,'y' => $sumy,'xt'=>$hasil,'n'=>$n,'A'=>$A,'B'=>$B,'C'=>$C);
-              // return "tes";
 
-              // if(Hasil::where(['obat_id'=>$obat_id])->count()){
+              if(Hasil::where(['obat_id'=>$obat_id])->count()){
                 //jika ada maka update
-                // Hasil::where(['obat_id'=>$obat_id])->update]($sum);
-                Hasil::where('obat_id','=',$obat_id])->delete();
+                Hasil::where(['obat_id'=>$obat_id])->update($sum);
                 // echo "update \n";
-              // }else{
+              }else{
                 //jika tidak maka input
-                return "mungkin dsini";
                 Hasil::insert($sum);
+
               // echo "input \n";
-              // }
+              }
 
               unset($x);unset($x2);unset($xy);unset($y);unset($jumlah);unset($bulan);
               unset($sumx);unset($sumx2);unset($sumxy);unset($sumy);unset($sum);
 
 
       }
-
-      // return "sampai sini";
       // dd(Perhitungan::where(['obat_id'=>$obat_id])->count());
       // dd(Hasil::where(['obat_id'=>$obat_id])->count());
       if(Perhitungan::where(['obat_id'=>$obat_id])->count()==0){
