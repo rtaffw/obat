@@ -29,11 +29,11 @@ class PeramalanController extends Controller
 
         foreach ($data_obat as $key => $v) {
           // echo Hasil::where(['obat_id'=>$v->id])->count();
-          if(!Hasil::where(['obat_id'=>$v->id])->count()){
+          // if(!Hasil::where(['obat_id'=>$v->id])->count()){
               Hasil::insert(['obat_id'=>$v->id,'c'=>0]);
-          }
+          // }
         }
-return "berhasil fin";
+// return "berhasil fin";
 // return Hasil::all();
 
 //           foreach(Hasil::all() as $key => $v)
