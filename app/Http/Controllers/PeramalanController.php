@@ -163,17 +163,19 @@ class PeramalanController extends Controller
 
 
 
-              $sum = array('obat_id'=>$obat_id,'bulan'=>$bulan[$key],'x' => $sumx,'x2' => $sumx2,'xy' => $sumxy,'y' => $sumy,'xt'=>$hasil,'n'=>$n,'A'=>$A,'B'=>$B,'C'=>$C);
+
 
               if(Hasil::where(['obat_id'=>$obat_id])->count()){
                 //jika ada maka update
-                // Hasil::where(['obat_id'=>$obat_id])->update($sum);
-                return "ada";
+                $sum = array('bulan'=>$bulan[$key],'x' => $sumx,'x2' => $sumx2,'xy' => $sumxy,'y' => $sumy,'xt'=>$hasil,'n'=>$n,'A'=>$A,'B'=>$B,'C'=>$C);
+                Hasil::where(['obat_id'=>$obat_id])->update($sum);
+                // return "ada";
                 // echo "update \n";
               }else{
-                return "tak ada";
+                $sum = array('obat_id'=>$obat_id,'bulan'=>$bulan[$key],'x' => $sumx,'x2' => $sumx2,'xy' => $sumxy,'y' => $sumy,'xt'=>$hasil,'n'=>$n,'A'=>$A,'B'=>$B,'C'=>$C);
+                // return "tak ada";
                 //jika tidak maka input
-                // Hasil::insert($sum);
+                Hasil::insert($sum);
 
               // echo "input \n";
               }
