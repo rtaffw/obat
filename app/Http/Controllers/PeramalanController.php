@@ -175,8 +175,8 @@ class PeramalanController extends Controller
                 // echo "update \n";
               // }else{
                 //jika tidak maka input
-                Hasil::insert($sum);
                 return "mungkin dsini";
+                Hasil::insert($sum);
               // echo "input \n";
               // }
 
