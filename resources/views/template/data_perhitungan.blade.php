@@ -283,6 +283,7 @@ $( function () {
 	labels: [@foreach ($bulan as $v) "{{$v}}", @endforeach],
 		series: [
 					[@foreach ($a as $v) {{$v}}, @endforeach ],
+          [@foreach ($a as $v) null, @endforeach ],
           [ @foreach ($b as $v) {{$v}}, @endforeach],
 			]
 		}, {
