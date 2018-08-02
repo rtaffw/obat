@@ -12,28 +12,28 @@
     <title>Aplikasi Peramalan Menggunakan Metode Least Square</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{asset('template/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('template/vendor/bootstrap/css/bootstrap.min.css')}}">
 
     <!-- MetisMenu CSS -->
-    <link href="{{asset('template/vendor/metisMenu/metisMenu.min.css')}}" rel="stylesheet">
+    <link href="{{asset('template/vendor/metisMenu/metisMenu.min.css')}}">
 
     <!-- Custom CSS -->
-    <link href="{{asset('template/dist/css/sb-admin-2.css')}}" rel="stylesheet">
+    <link href="{{asset('template/dist/css/sb-admin-2.css')}}">
 
     <!-- Chartis CSS -->
-    <link href="{{asset('template/dist/css/chartist.min.css')}}" rel="stylesheet">
+    <link href="{{asset('template/dist/css/chartist.min.css')}}">
 
     <!-- Morris Charts CSS -->
-    <link href="{{asset('template/vendor/morrisjs/morris.css')}}" rel="stylesheet">
+    <link href="{{asset('template/vendor/morrisjs/morris.css')}}">
 
     <!-- Custom Fonts -->
-    <link href="{{asset('template/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('template/vendor/font-awesome/css/font-awesome.min.css')}}" type="text/css">
 
     <!-- DataTables CSS -->
-    <link href="{{asset('template/vendor/datatables-plugins/dataTables.bootstrap.css')}}" rel="stylesheet">
+    <link href="{{asset('template/vendor/datatables-plugins/dataTables.bootstrap.css')}}">
 
     <!-- DataTables Responsive CSS -->
-    <link href="{{asset('template/vendor/datatables-responsive/dataTables.responsive.css')}}" rel="stylesheet">
+    <link href="{{asset('template/vendor/datatables-responsive/dataTables.responsive.css')}}">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
