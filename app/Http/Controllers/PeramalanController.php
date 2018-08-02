@@ -25,8 +25,10 @@ class PeramalanController extends Controller
     public function index()
     {
 
-      return "masuk";
-        // $data_obat = Obat::all();
+      // return "masuk";
+        $data_obat = Obat::all();
+
+        return $data_obat;
         //
         // foreach ($data_obat as $key => $v) {
         //   // echo Hasil::where(['obat_id'=>$v->id])->count();
