@@ -34,7 +34,7 @@ class PeramalanController extends Controller
           }
         }
 
-// return Hasil::all();
+return Hasil::all();
 
           foreach(Hasil::all() as $key => $v)
           {
