@@ -41,6 +41,7 @@ class PeramalanController extends Controller
                                       'id'          => $v->id,
                                       'obat_id'     => $v->obat_id,
                                       // 'nama'        => $v->obat->name,
+                                      'nama'        => "ERROR",
                                       'bulan'       => explode("-" , $v->bulan)[1],
                                       'bulan_huruf' => $this->Bulan_indo(explode("-" , $v->bulan)[1]),
                                       'tahun'       => explode("-" , $v->bulan)[0],
@@ -193,7 +194,8 @@ return $data_hasil;
       {
             $data_perhitungan[$key] = [
                                   'id'          => $v->id,
-                                  'nama'        => $v->obat->name,
+                                  // 'nama'        => $v->obat->name,
+                                  'nama'        => "ERROR",
                                   'bulan'       => explode("-" , $v->bulan)[1],
                                   'bulan_huruf' => $this->Bulan_indo(explode("-" , $v->bulan)[1]),
                                   'tahun'       => explode("-" , $v->bulan)[0],
