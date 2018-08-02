@@ -33,7 +33,7 @@ class PeramalanController extends Controller
           }
         }
 
-// return Hasil::all();
+return Hasil::all();
 
           foreach(Hasil::all() as $key => $v)
           {
@@ -48,7 +48,7 @@ class PeramalanController extends Controller
                                     ];
                               }
 
-return $data_hasil;
+// return $data_hasil;
           // return view('template.data_peramalan',[
           //                                   'data_obat' => $data_obat,
           //                                   'data_hasil' => $data_hasil,
