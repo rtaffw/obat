@@ -42,7 +42,7 @@ class PeramalanController extends Controller
                                       'obat_id'     => $v->obat->id,
                                       'nama'        => $v->obat->name,
                                       // 'bulan'       => explode("-" , $v->bulan)[1],
-                                      'bulan_huruf' => $this->Bulan_indo(explode("-" , $v->bulan)[1]),
+                                      // 'bulan_huruf' => $this->Bulan_indo(explode("-" , $v->bulan)[1]),
                                       // 'tahun'       => explode("-" , $v->bulan)[0],
                                       'jumlah'      => $v->c,
                                     ];
