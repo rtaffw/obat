@@ -87,7 +87,7 @@ class PeramalanController extends Controller
       $obat_id = $id;
       $data = Stok::selectRaw('count(*) as n, obat_id')->where(['obat_id'=>$obat_id])->groupBy('obat_id')->get();
       Perhitungan::where(['obat_id'=>$obat_id])->delete();
-      return $data;
+      // return $data;
 
       foreach ($data as $key => $v) {
         $n       =  $v['n'];
@@ -108,6 +108,7 @@ class PeramalanController extends Controller
 
 
               $jumlah = stok::select('jumlah','bulan')->where('obat_id','=',$obat_id)->get();
+              return $jumlah;
 
               foreach ($jumlah as $key => $v) {
                 $x[$key] = $hasil;
