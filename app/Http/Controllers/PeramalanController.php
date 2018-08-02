@@ -87,7 +87,7 @@ class PeramalanController extends Controller
       $obat_id = $id;
       $data = Stok::selectRaw('count(*) as n, obat_id')->where(['obat_id'=>$obat_id])->groupBy('obat_id')->get();
       Perhitungan::where(['obat_id'=>$obat_id])->delete();
-      return "sampai sini";
+      // return "sampai sini";
 
       foreach ($data as $key => $v) {
         $n       =  $v['n'];
@@ -182,6 +182,8 @@ class PeramalanController extends Controller
 
 
       }
+
+      return "sampai sini";
       // dd(Perhitungan::where(['obat_id'=>$obat_id])->count());
       // dd(Hasil::where(['obat_id'=>$obat_id])->count());
       if(Perhitungan::where(['obat_id'=>$obat_id])->count()==0){
