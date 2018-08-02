@@ -186,7 +186,7 @@ class PeramalanController extends Controller
       if(Perhitungan::where(['obat_id'=>$obat_id])->count()==0){
         return redirect()->route('data_peramalan.index')->with('Gagal', 'Data Stok Obat Masih Kosong.');;
       }
-
+return "sampai sini";
       foreach(Perhitungan::where(['obat_id'=>$obat_id])->get() as $key => $v)
       {
             $data_perhitungan[$key] = [
