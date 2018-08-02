@@ -167,11 +167,13 @@ class PeramalanController extends Controller
 
               if(Hasil::where(['obat_id'=>$obat_id])->count()){
                 //jika ada maka update
-                Hasil::where(['obat_id'=>$obat_id])->update($sum);
+                // Hasil::where(['obat_id'=>$obat_id])->update($sum);
+                return "ada";
                 // echo "update \n";
               }else{
+                return "tak ada";
                 //jika tidak maka input
-                Hasil::insert($sum);
+                // Hasil::insert($sum);
 
               // echo "input \n";
               }
