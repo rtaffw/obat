@@ -166,6 +166,7 @@ class PeramalanController extends Controller
 
 
               $sum = array('obat_id'=>$obat_id,'bulan'=>$bulan[$key],'x' => $sumx,'x2' => $sumx2,'xy' => $sumxy,'y' => $sumy,'xt'=>$hasil,'n'=>$n,'A'=>$A,'B'=>$B,'C'=>$C);
+              return "tes";
 
               if(Hasil::where(['obat_id'=>$obat_id])->count()){
                 //jika ada maka update
@@ -178,7 +179,6 @@ class PeramalanController extends Controller
               // echo "input \n";
               }
 
-              return "tes";
               unset($x);unset($x2);unset($xy);unset($y);unset($jumlah);unset($bulan);
               unset($sumx);unset($sumx2);unset($sumxy);unset($sumy);unset($sum);
 
