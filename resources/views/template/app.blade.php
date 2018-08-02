@@ -12,28 +12,28 @@
     <title>Aplikasi Peramalan Menggunakan Metode Least Square</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{asset('template/vendor/bootstrap/css/bootstrap.min.css')}}">
+    <link href="{{secure_asset('template/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="{{asset('template/vendor/metisMenu/metisMenu.min.css')}}">
+    <link href="{{secure_asset('template/vendor/metisMenu/metisMenu.min.css')}}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{asset('template/dist/css/sb-admin-2.css')}}">
+    <link href="{{secure_asset('template/dist/css/sb-admin-2.css')}}" rel="stylesheet">
 
     <!-- Chartis CSS -->
-    <link href="{{asset('template/dist/css/chartist.min.css')}}">
+    <link href="{{secure_asset('template/dist/css/chartist.min.css')}}" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="{{asset('template/vendor/morrisjs/morris.css')}}">
+    <link href="{{secure_asset('template/vendor/morrisjs/morris.css')}}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{{asset('template/vendor/font-awesome/css/font-awesome.min.css')}}" type="text/css">
+    <link href="{{secure_asset('template/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
     <!-- DataTables CSS -->
-    <link href="{{asset('template/vendor/datatables-plugins/dataTables.bootstrap.css')}}">
+    <link href="{{secure_asset('template/vendor/datatables-plugins/dataTables.bootstrap.css')}}" rel="stylesheet">
 
     <!-- DataTables Responsive CSS -->
-    <link href="{{asset('template/vendor/datatables-responsive/dataTables.responsive.css')}}">
+    <link href="{{secure_asset('template/vendor/datatables-responsive/dataTables.responsive.css')}}" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -98,7 +98,7 @@
                             <a href="{{route('data_peramalan.index')}}" ><i class="fa fa-table fa-fw"></i>Data Peramalan</a>
                         </li>
                         <li>
-                            <a href="{{route('logout')}}"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+                            <a href="{{route('logout')}}"><span class="glyphicon glyphicon-log-out">secure_</span>Logout</a>
                         </li>
                     </ul>
                 </div>
