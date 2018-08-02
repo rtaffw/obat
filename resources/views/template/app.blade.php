@@ -12,28 +12,28 @@
     <title>Aplikasi Peramalan Menggunakan Metode Least Square</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{secure_asset('template/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="/template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="{{secure_asset('template/vendor/metisMenu/metisMenu.min.css')}}" rel="stylesheet">
+    <link href="/template/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{secure_asset('template/dist/css/sb-admin-2.css')}}" rel="stylesheet">
+    <link href="/template/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Chartis CSS -->
-    <link href="{{secure_asset('template/dist/css/chartist.min.css')}}" rel="stylesheet">
+    <link href="/template/dist/css/chartist.min.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="{{secure_asset('template/vendor/morrisjs/morris.css')}}" rel="stylesheet">
+    <link href="/template/vendor/morrisjs/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{{secure_asset('template/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="/template/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- DataTables CSS -->
-    <link href="{{secure_asset('template/vendor/datatables-plugins/dataTables.bootstrap.css')}}" rel="stylesheet">
+    <link href="/template/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
 
     <!-- DataTables Responsive CSS -->
-    <link href="{{secure_asset('template/vendor/datatables-responsive/dataTables.responsive.css')}}" rel="stylesheet">
+    <link href="/template/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
