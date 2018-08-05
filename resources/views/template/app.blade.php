@@ -14,6 +14,8 @@
     <!-- Bootstrap Core CSS -->
     <link href="/template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
     <!-- MetisMenu CSS -->
     <link href="/template/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
